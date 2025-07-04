@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Naivedhya Sharma | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0a0f3c, #003a63);
+      color: #ffffff;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 2rem;
+      position: relative;
+      background: transparent;
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+      margin-right: 2rem;
+    }
+
+    .header-text h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0%;
+      height: 2px;
+      background: #00bcd4;
+      transition: 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 960px;
+      margin: auto;
+      margin-top: 3rem;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+    }
+
+    h2 {
+      color: #00bcd4;
+      margin-bottom: 1rem;
+    }
+
+    .project, .education-item, .skill-item {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background-color: #00bcd4;
+      color: #000;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #26d7f4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+      color: #ccc;
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .profile-pic {
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="naivedhya.png" alt="Naivedhya Sharma" class="profile-pic">
+    <div class="header-text">
+      <h1>Naivedhya Sharma</h1>
+      <p>Web Developer | Designer | Tech Enthusiast</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+    Hi, I'm Naivedhya Sharma, a B.Tech IT student at Manipal University Jaipur — a tech enthusiast with a passion for graphic design and photography. I specialize in front-end development using HTML, CSS, JavaScript, and React, and also work with back-end tools like Node.js, Express.js, and MongoDB. With skills in design tools like Photoshop, Illustrator, and Figma, I love creating digital experiences that are both functional and visually engaging.
+
+
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>Designed and developed a personal portfolio using HTML, CSS, and scroll animations.</p>
+    </div>
+    <div class="project">
+      <h3>Event Posters</h3>
+      <p>Created posters and digital assets for college events using Photoshop and Illustrator.</p>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" data-aos="fade-up">
+    <h2>Resume</h2>
+    <p>You can view or download my resume below:</p>
+    <a href="https://drive.google.com/uc=?export=download&id=1FA3_YeqSi2JsdfSNxOSYDwPWZSOIzqIu" target="_blank" class="button">View Resume</a>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" data-aos="fade-up">
+    <h2>Education</h2>
+    <div class="education-item">
+      <h3>Manipal University Jaipur</h3>
+      <p>Bachelor’s of Technology in Information Technology – 2024–2028</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="skill-item">HTML, CSS, JavaScript</div>
+    <div class="skill-item">Photoshop, Illustrator, Photography</div>
+    <div class="skill-item">Responsive Design, GitHub, UI/UX</div>
+  </section>
+
+
+<section id="contact" class="glow">
+  <h2>Contact Me</h2>
+  <p>You can reach me through the following platforms:</p>
+
+  <div style="margin-top: 1.5rem; font-size: 1.3rem;">
+    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:Ns2032006@gmail.com" style="color:#93c5fd;">ns2302006@gmail.com</a></p>
+    <p><i class="fab fa-instagram"></i> Instagram: <a href="https://instagram.com/naivedhya_20" target="_blank" style="color:#93c5fd;">naivedhya_20</a></p>
+    <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/https://www.linkedin.com/in/naivedhya-sharma-90b157318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color:#93c5fd;">linkedin.com/in/your-link</a></p>
+  </div>
+</section>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<footer>
+  <div class="quick-links">
+    <h3>Quick Links</h3>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Naivedhya Sharma. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+</body>
+</html>
